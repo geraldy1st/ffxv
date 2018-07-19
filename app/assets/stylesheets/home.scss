@@ -294,6 +294,8 @@ nav a:focus {
 
 	.home-about-textbox {
 		padding: 5.5em;
+		margin: 0 auto;
+		background-color: rgba(35, 35, 35,1);
 	}
 
 	.home-about-textbox h1 {
@@ -323,6 +325,7 @@ nav a:focus {
 		top: -5em;
 		text-align: left;
 		box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+		background-color: rgba(35, 35, 35,.7);
 	}
 
 	.home-about-textbox h1 {
