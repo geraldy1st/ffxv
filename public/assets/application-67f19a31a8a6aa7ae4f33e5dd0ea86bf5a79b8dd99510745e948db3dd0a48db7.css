@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900");
+/* line 7, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+}
+
+/* line 12, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+/* line 17, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.logo {
+  max-width: 200px;
+}
+
+/* line 21, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 26, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.container {
+  width: 100%;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+/* line 32, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.clearfix::after,
+section::after,
+footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Column system
+=================== */
+/* line 44, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+[class^=col-] {
+  width: 100%;
+  margin-top: 1em;
+}
+
+/* line 49, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+[class^=col-]:first-child {
+  margin-top: 0;
+}
+
+/* line 53, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.col-1 {
+  width: 33.333334%;
+  float: left;
+}
+
+@media (min-width: 40rem) {
+  /* line 61, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  [class^=col-] {
+    float: left;
+    padding: 0 .5em;
+    margin-top: 0;
+  }
+
+  /* line 67, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  [class^=col-]:first-child {
+    padding-left: 0;
+  }
+
+  /* line 71, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  [class^=col-]:last-child {
+    padding-right: 0;
+  }
+
+  /* line 75, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .col-3 {
+    width: 50%;
+  }
+
+  /* line 79, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .col-1 {
+    width: 16.6666%;
+  }
+}
+/* typography
+=================== */
+/* line 91, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+h1 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-top: 0;
+}
+
+/* line 97, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+/* line 102, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* line 106, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+  margin-top: 1em;
+}
+
+/* line 113, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .9em;
+}
+
+/* line 119, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.title-cta {
+  margin: 0 0 .5em;
+}
+
+/* line 123, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 60rem) {
+  /* line 131, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  /* line 136, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .title {
+    font-size: 3.7rem;
+  }
+}
+/* buttons */
+/* line 143, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.button {
+  display: inline-block;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem) {
+  /* line 154, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .button {
+    font-size: 1.5rem;
+  }
+}
+/* line 159, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.button-small {
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+/* line 164, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.button-accent {
+  color: #c02121;
+  border-color: #c02121;
+}
+
+/* line 169, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.button-accent:hover,
+.button-accent:focus {
+  background: rgba(192, 33, 33, 0.1);
+  color: #EEE;
+}
+
+/* line 175, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.button-dark {
+  color: #232323;
+  border-color: #232323;
+}
+
+/* line 180, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.button-dark:hover,
+.button-dark:focus {
+  background: #232323;
+  color: #c02121;
+}
+
+/* Parallax
+=================== */
+/* line 189, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.parallax--bg,
+.parallax--box {
+  transition: initial;
+}
+
+/* header
+=================== */
+/* line 199, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+/* line 206, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 212, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+/* line 217, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  padding: .5em;
+  text-transform: uppercase;
+  color: white;
+  font-size: .8rem;
+}
+
+/* line 226, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+nav a:hover,
+nav a:focus {
+  color: #ddd;
+}
+
+@media (min-width: 60rem) {
+  /* line 232, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .logo {
+    float: left;
+    max-width: 270px;
+  }
+
+  /* line 237, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  nav {
+    float: right;
+  }
+}
+/* hero-home
+=================== */
+/* line 246, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.home-hero {
+  background-image: url(https://vignette.wikia.nocookie.net/ffxv/images/6/65/Praxia.jpg/revision/latest?cb=20120603003150);
+  background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+  color: #FFF;
+}
+
+@media (min-width: 60rem) {
+  /* line 255, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .home-hero {
+    height: 100vh;
+    padding-top: 35vh;
+  }
+}
+/* hero-home
+=================== */
+/* line 265, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.home-about-textbox {
+  background-color: #232323;
+  padding: 4em;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 2px solid #c02121;
+  outline-offset: -2.5em;
+  color: #FFF;
+  position: relative;
+}
+
+/* line 276, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.home-about-textbox h1 {
+  color: #c02121;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .75em;
+  background: #232323;
+  padding: 0 .145em;
+}
+
+@media (min-width: 25rem) {
+  /* line 287, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* line 291, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .home-about-textbox {
+    padding: 5.5em;
+  }
+
+  /* line 295, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .home-about-textbox h1 {
+    top: .6em;
+    padding: 0 .325em;
+  }
+}
+@media (min-width: 60rem) {
+  /* line 302, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  /* line 306, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .home-about {
+    background-image: url(http://learnthegeek.fr/wp-content/uploads/2016/07/final-fantasy-xv.jpg-5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 10em;
+  }
+
+  /* line 313, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .home-about-textbox {
+    width: 50%;
+    padding: 7em;
+    outline-offset: -3.75em;
+    margin-left: -2.5%;
+    top: -5em;
+    text-align: left;
+    box-shadow: 0 0 4em 0 rgba(0, 0, 0, 0.3);
+  }
+
+  /* line 323, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .home-about-textbox h1 {
+    top: .75em;
+    left: 6rem;
+    transform: translateX(0);
+  }
+}
+/* portfolio
+=================== */
+/* line 337, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.portfolio {
+  margin: 3em 0 0;
+}
+
+/* line 341, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.port-item {
+  margin: 0;
+  position: relative;
+}
+
+/* line 346, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.port-item img {
+  display: block;
+}
+
+/* line 350, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.port-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding-bottom: 2em;
+}
+
+/* line 361, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.port-desc p {
+  margin: 1em;
+}
+
+@media (min-width: 37rem) {
+  /* line 366, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .port-item {
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 60rem) {
+  /* line 373, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .port-item {
+    width: 33.3333334%;
+    overflow: hidden;
+  }
+
+  /* line 378, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .port-desc {
+    transform: translateY(150%);
+  }
+
+  /* line 382, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+  .port-item:hover .port-desc {
+    transform: translateY(0%);
+  }
+}
+/* CTA
+=================== */
+/* line 391, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+.cta {
+  background-color: rgba(33, 33, 33, 0.1);
+  padding: 5em 0;
+}
+
+/* Footer
+=================== */
+/* line 400, /Users/geraldy/Documents/dev/coding/KevinPower/parallax/ffxv/ffxv/app/assets/stylesheets/home.scss */
+footer {
+  background: #232323;
+  color: #fff;
+  text-align: left;
+  padding: 5em 0;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
