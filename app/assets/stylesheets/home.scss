@@ -335,7 +335,7 @@ nav a:focus {
 =================== */
 
 .portfolio {
-	margin: 3em 0 0;
+	margin: 0;
 }
 
 .port-item {
@@ -359,7 +359,7 @@ nav a:focus {
 }
 
 .port-desc p {
-	margin: 1em;
+	padding: 1em;
 }
 
 @media (min-width: 37rem) {
@@ -370,17 +370,26 @@ nav a:focus {
 }
 
 @media (min-width: 60rem) {
+	.portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 	.port-item {
-		width: 33.3333334%;
+		flex-basis: 33%;
 		overflow: hidden;
+		background-color: #000000;
 	}
 
 	.port-desc {
-		transform: translateY(150%);
+		// transform: translateY(150%);
+		transform: translateY(0%);
+		opacity: 0;
 	}
 
 	.port-item:hover .port-desc {
-		transform: translateY(0%);
+		// transform: translateY(0%);
+		opacity: 1;
 	}
 }
 
@@ -389,7 +398,7 @@ nav a:focus {
 =================== */
 
 .cta {
-	background-color: rgba(33, 33, 33,.1);
+	background-color: rgba(233, 233, 233,1);
 	padding: 5em 0;
 }
 
@@ -400,6 +409,6 @@ nav a:focus {
 footer {
 	background: #232323;
 	color: #fff;
-	text-align: left;
-	padding: 5em 0;
+	text-align: center;
+	padding: 2em 0;
 }
